@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Frontend practice with header",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "init": "mate-scripts init",
     "start": "mate-scripts start",
     "format": "prettier --ignore-path .prettierignore --write './src/**/*.{html,css,scss}'",
